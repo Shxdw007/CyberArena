@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости киберспорта | CyberArena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link" data-i18n="skip">Перейти к контенту</a>
+
+    <div class="site-wrap">
+        <header class="site-header">
+            <div class="site-header__top">
+                <h1 class="site-title" data-i18n="siteTitleShort">CyberArena</h1>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+                
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="navHome">Главная</a></li>
+                        <li><a href="news.html" aria-current="page" data-i18n="navNews">Новости</a></li>
+                        <li><a href="teams.html" data-i18n="navTeams">Команды и игроки</a></li>
+                        <li><a href="tournaments.html" data-i18n="navTournaments">Турниры</a></li>
+                        <li><a href="broadcasts.html" data-i18n="navBroadcasts">Трансляции</a></li>
+                        <li><a href="forum.html" data-i18n="navForum">Форум</a></li>
+                        <li><a href="contacts.html" data-i18n="navContacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <section class="lang-bar" aria-label="Переключение языка">
+                    <h2 data-i18n="langTitle">Язык</h2>
+                    <ul>
+                        <li><a href="#" class="js-lang" data-lang="ru" aria-current="page">RU</a></li>
+                        <li><a href="#" class="js-lang" data-lang="en">EN</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+
+        <hr>
+
+        <main id="main" class="site-main">
+    <section>
+        <h2 data-i18n="newsFeedTitle">Лента новостей</h2>
+        <article>
+            <header>
+                <h3 data-i18n="news1Title">Team Spirit становятся чемпионами IEM Katowice!</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="news1Meta">Опубликовано: <time datetime="2026-02-15">15 февраля 2026</time> | Автор: <em>Аналитический отдел</em></p>
+            </header>
+            <p data-i18n="news1Text">В гранд-финале турнира в Катовице команда Team Spirit одержала уверенную победу над FaZe Clan со счетом 3:0. Молодой талант donk снова показал невероятный уровень индивидуальной игры, закончив серию с рейтингом 1.62.</p>
+            <ul>
+                <li data-i18n="news1Map1">Карта 1 (Mirage): 13-9 в пользу Spirit</li>
+                <li data-i18n="news1Map2">Карта 2 (Nuke): 13-11 в пользу Spirit</li>
+                <li data-i18n="news1Map3">Карта 3 (Overpass): 13-3 в пользу Spirit</li>
+            </ul>
+            <p><a href="#" data-i18n="newsReadMore">Читать полный разбор матча...</a></p>
+        </article>
+
+        <article>
+            <header>
+                <h3 data-i18n="news2Title">Вышел патч 7.35d в Dota 2: Конец эры Chen и Dragon Knight</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="news2Meta">Опубликовано: <time datetime="2026-02-14">14 февраля 2026</time> | Автор: <em>IceFrog Fan</em></p>
+            </header>
+            <p data-i18n="news2Text">Valve выпустили долгожданное буквенное обновление. Основной удар пришелся по самым популярным героям прошедшего мейджора. Chen потерял процентное снижение брони на крипах, а Dragon Knight получил существенный нерф врожденной регенерации.</p>
+            <blockquote style="border-left: 3px solid var(--accent-2); padding-left: 1.2rem; font-style: italic; background: rgba(255, 45, 149, 0.05); padding: 1rem; border-radius: 0 8px 8px 0; margin: 1rem 0;" data-i18n="news2Quote">
+                "Наконец-то мы сможем пикать других героев в сложную линию. Этот патч освежит мету перед грядущими квалификациями" — прокомментировал капитан команды Entity.
+            </blockquote>
+        </article>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2 data-i18n="newsInterviewsTitle">Эксклюзивные интервью</h2>
+        <article>
+            <h3 data-i18n="news3Title">M0NESY: "Мы готовы забирать следующий мажор"</h3>
+            <p><span data-i18n="news3Text">Снайпер команды G2 поделился своими мыслями о текущей форме состава. По его словам, команда провела масштабный буткемп и исправила ошибки в коммуникации, которые мешали им на последних двух турнирах.</span> <a href="#" data-i18n="newsReadMore">Читать полное интервью...</a></p>
+        </article>
+    </section>
+</main>
+
+        <footer class="site-footer">
+            <p>Григорий Педанов ИСП(11)-24-2</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

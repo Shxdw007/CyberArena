@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум сообщества | CyberArena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link" data-i18n="skip">Перейти к контенту</a>
+
+    <div class="site-wrap">
+        <header class="site-header">
+            <div class="site-header__top">
+                <h1 class="site-title" data-i18n="siteTitleShort">CyberArena</h1>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+                
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="navHome">Главная</a></li>
+                        <li><a href="news.html" data-i18n="navNews">Новости</a></li>
+                        <li><a href="teams.html" data-i18n="navTeams">Команды и игроки</a></li>
+                        <li><a href="tournaments.html" data-i18n="navTournaments">Турниры</a></li>
+                        <li><a href="broadcasts.html" data-i18n="navBroadcasts">Трансляции</a></li>
+                        <li><a href="forum.html" aria-current="page" data-i18n="navForum">Форум</a></li>
+                        <li><a href="contacts.html" data-i18n="navContacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <section class="lang-bar" aria-label="Переключение языка">
+                    <h2 data-i18n="langTitle">Язык</h2>
+                    <ul>
+                        <li><a href="#" class="js-lang" data-lang="ru" aria-current="page">RU</a></li>
+                        <li><a href="#" class="js-lang" data-lang="en">EN</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+
+        <hr>
+
+        <main id="main" class="site-main">
+            <section>
+    <h2 data-i18n="forumDiscuss">Обсуждения и патчноуты</h2>
+    <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-color: var(--border); text-align: left; border-collapse: collapse;">
+        <thead>
+            <tr style="background: var(--bg-card);">
+                <th data-i18n="forumThTopic">Тема</th>
+                <th data-i18n="forumThAuthor">Автор</th>
+                <th data-i18n="forumThReplies">Ответов</th>
+                <th data-i18n="forumThLast">Последнее сообщение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong><a href="#" data-i18n="forumTopic1Title">Обсуждение патча 7.35d (Dota 2)</a></strong><br><small style="color: var(--text-muted);" data-i18n="forumTopic1Desc">Делимся мнением, кто теперь имба патча.</small></td>
+                <td>IceFrog_Hater</td>
+                <td>142</td>
+                <td data-i18n="brdToday">Сегодня, 14:20</td>
+            </tr>
+            <tr>
+                <td><strong><a href="#" data-i18n="forumTopic2Title">Раскидка смоков на новой карте в CS2</a></strong><br><small style="color: var(--text-muted);" data-i18n="forumTopic2Desc">Собрал лучшие гранаты для защиты А-плента.</small></td>
+                <td>GlobalElite</td>
+                <td>38</td>
+                <td>Вчера, 23:15</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<section>
+    <h2 data-i18n="forumRecruit">Рекрутинг (Поиск команды)</h2>
+    <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-color: var(--border); text-align: left; border-collapse: collapse;">
+        <thead>
+            <tr style="background: var(--bg-card);">
+                <th data-i18n="forumThTopic">Тема</th>
+                <th data-i18n="homeThGame">Дисциплина</th>
+                <th data-i18n="forumThRank">Ранг/MMR</th>
+                <th data-i18n="forumThDate">Дата создания</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#" data-i18n="forumRecruit1Title">Ищу стак для Faceit, роль - IGL/Саппорт</a></td>
+                <td>CS2</td>
+                <td>Faceit Lvl 8+</td>
+                <td data-i18n="brdToday">Сегодня, 10:00</td>
+            </tr>
+            <tr>
+                <td><a href="#" data-i18n="forumRecruit2Title">Команда ищет хардлайнера (pos 3)</a></td>
+                <td>Dota 2</td>
+                <td>7000+ MMR</td>
+                <td>Вчера, 18:45</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+            <hr>
+
+            <section>
+                <h2 data-i18n="forumCreateTitle">Создать новую тему</h2>
+                <form action="#" method="post" style="max-width: 600px;">
+                    <label for="topic-title" data-i18n="forumTopicTitleLabel">Заголовок темы:</label>
+                    <input type="text" id="topic-title" name="topicTitle" required>
+
+                    <label for="topic-category" data-i18n="forumTopicCategoryLabel">Категория:</label>
+                    <select id="topic-category" name="topicCategory">
+                        <option value="dota">Dota 2</option>
+                        <option value="cs2">CS2</option>
+                        <option value="team" data-i18n="forumCatTeam">Поиск команды</option>
+                        <option value="tech" data-i18n="forumCatTech">Технические проблемы</option>
+                        <option value="offtop" data-i18n="forumCatOfftopic">Оффтоп (Курилка)</option>
+                    </select>
+
+                    <label for="topic-text" data-i18n="forumTopicTextLabel">Текст сообщения:</label>
+                    <textarea id="topic-text" name="topicText" rows="6" required style="width: 100%; padding: 0.65rem 0.85rem; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-elevated); color: var(--text); font-family: inherit;"></textarea>
+
+                    <button type="submit" data-i18n="forumPublishBtn">Опубликовать тему</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Григорий Педанов ИСП(11)-24-2</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

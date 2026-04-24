@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | CyberArena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link" data-i18n="skip">Перейти к контенту</a>
+
+    <div class="site-wrap">
+        <header class="site-header">
+            <div class="site-header__top">
+                <h1 class="site-title" data-i18n="siteTitleShort">CyberArena</h1>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+                
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="navHome">Главная</a></li>
+                        <li><a href="news.html" data-i18n="navNews">Новости</a></li>
+                        <li><a href="teams.html" data-i18n="navTeams">Команды и игроки</a></li>
+                        <li><a href="tournaments.html" data-i18n="navTournaments">Турниры</a></li>
+                        <li><a href="broadcasts.html" data-i18n="navBroadcasts">Трансляции</a></li>
+                        <li><a href="forum.html" data-i18n="navForum">Форум</a></li>
+                        <li><a href="contacts.html" aria-current="page" data-i18n="navContacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <section class="lang-bar" aria-label="Переключение языка">
+                    <h2 data-i18n="langTitle">Язык</h2>
+                    <ul>
+                        <li><a href="#" class="js-lang" data-lang="ru" aria-current="page">RU</a></li>
+                        <li><a href="#" class="js-lang" data-lang="en">EN</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+
+        <hr>
+
+        <main id="main" class="site-main">
+    <section>
+        <h2 data-i18n="contactOrg">Организаторы</h2>
+        <article>
+            <h3 data-i18n="contactOrgSub">Контакты организаторов</h3>
+            <ul>
+                <li>Email: <a href="mailto:organizer@example.com">organizer@example.com</a></li>
+                <li data-i18n="contactTime">Время ответа: 10:00–18:00 (МСК)</li>
+            </ul>
+        </article>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2 data-i18n="contactAds">Реклама и сотрудничество</h2>
+        <article>
+            <h3 data-i18n="contactAdsSub">Партнерства</h3>
+            <ul>
+                <li>Email: <a href="mailto:partners@example.com">partners@example.com</a></li>
+                <li data-i18n="contactAdsTopics">Темы: интеграции, спонсорство, медиа и пресс-релизы</li>
+            </ul>
+        </article>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2 data-i18n="contactTech">Техподдержка</h2>
+        <article>
+            <h3 data-i18n="contactTechSub">Служба поддержки пользователей</h3>
+            <ul>
+                <li>Email: <a href="mailto:support@example.com">support@example.com</a></li>
+                <li><span data-i18n="forumCatTech">Форум поддержки:</span> <a href="forum.html" data-i18n="contactTechForum">Раздел «Технические проблемы»</a></li>
+            </ul>
+        </article>
+    </section>
+</main>
+
+        <footer class="site-footer">
+            <p>Григорий Педанов ИСП(11)-24-2</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

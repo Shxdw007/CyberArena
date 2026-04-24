@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турниры | CyberArena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link" data-i18n="skip">Перейти к контенту</a>
+
+    <div class="site-wrap">
+        <header class="site-header">
+            <div class="site-header__top">
+                <h1 class="site-title" data-i18n="siteTitleShort">CyberArena</h1>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+                
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="navHome">Главная</a></li>
+                        <li><a href="news.html" data-i18n="navNews">Новости</a></li>
+                        <li><a href="teams.html" data-i18n="navTeams">Команды и игроки</a></li>
+                        <li><a href="tournaments.html" aria-current="page" data-i18n="navTournaments">Турниры</a></li>
+                        <li><a href="broadcasts.html" data-i18n="navBroadcasts">Трансляции</a></li>
+                        <li><a href="forum.html" data-i18n="navForum">Форум</a></li>
+                        <li><a href="contacts.html" data-i18n="navContacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <section class="lang-bar" aria-label="Переключение языка">
+                    <h2 data-i18n="langTitle">Язык</h2>
+                    <ul>
+                        <li><a href="#" class="js-lang" data-lang="ru" aria-current="page">RU</a></li>
+                        <li><a href="#" class="js-lang" data-lang="en">EN</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+
+        <hr>
+
+        <main id="main" class="site-main">
+            <section>
+    <h2 data-i18n="tourActual">Актуальные турниры (Открыта регистрация)</h2>
+    <article>
+        <h3>CIS Spring Amateur Cup 2026</h3>
+        <ul>
+            <li><strong data-i18n="tourDisciplineLabel">Дисциплина:</strong> CS2 (5v5)</li>
+            <li><strong data-i18n="tourFormatLabel">Формат:</strong> Double Elimination (BO1, Финал BO3)</li>
+            <li><strong data-i18n="tourPrizeLabel">Призовой фонд:</strong> 100 000 рублей</li>
+            <li><strong data-i18n="tourDatesLabel">Даты проведения:</strong> 10 марта - 20 марта 2026</li>
+            <li><strong data-i18n="tourStatusLabel">Статус:</strong> <mark style="background: var(--accent-2); color: white; padding: 2px 8px; border-radius: 4px;" data-i18n="tourStatusLeft">Осталось 12 мест</mark></li>
+        </ul>
+        <p style="margin-top: 1rem;" data-i18n="tourDesc">Любительский турнир для команд из СНГ. Участие игроков с профилями HLTV строго запрещено.</p>
+    </article>
+</section>
+
+<section>
+    <h2 data-i18n="tourArchive">Архив завершенных турниров</h2>
+    <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-color: var(--border); text-align: left; border-collapse: collapse;">
+        <thead>
+            <tr style="background: var(--bg-card);">
+                <th data-i18n="tourThName">Название турнира</th>
+                <th data-i18n="homeThGame">Дисциплина</th>
+                <th data-i18n="tourThWinner">Победитель</th>
+                <th data-i18n="tourThMvp">MVP Турнира</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Winter University League</td>
+                <td>Dota 2</td>
+                <td>MSU Dragons</td>
+                <td>xX_Shadow_Xx</td>
+            </tr>
+            <tr>
+                <td>CyberArena Open #4</td>
+                <td>CS2</td>
+                <td>AimGods</td>
+                <td>Sanya_Sniper</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+            <hr>
+
+            <section>
+                <h2 data-i18n="tourApplyTitle">Форма заявки на турнир</h2>
+                <p data-i18n="tourApplyText">Внимательно заполните все поля. Связь с капитаном будет происходить через Discord.</p>
+                
+                <form action="#" method="post" enctype="multipart/form-data" style="max-width: 100%;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+                        <fieldset style="flex: 1; min-width: 300px;">
+                            <legend data-i18n="tourLegendTeam">Информация о команде</legend>
+
+                            <label for="team-name" data-i18n="tourTeamNameLabel">Название команды:</label>
+                            <input id="team-name" name="teamName" type="text" placeholder="Например: Natus Vincere" required />
+
+                            <label for="team-logo" style="margin-top: 1rem;" data-i18n="tourTeamLogoLabel">Логотип команды:</label>
+                            <input id="team-logo" name="teamLogo" type="file" accept="image/png, image/jpeg" style="background: transparent; border: none; padding: 0.5rem 0;" />
+
+                            <label for="region" style="margin-top: 1rem;" data-i18n="tourRegionLabel">Регион:</label>
+                            <select id="region" name="region" required>
+                                <option value="" data-i18n="tourRegionOptPlaceholder">-- Выберите регион --</option>
+                                <option value="ru" data-i18n="tourRegionOptRu">Россия</option>
+                                <option value="by" data-i18n="tourRegionOptBy">Беларусь</option>
+                                <option value="kz" data-i18n="tourRegionOptKz">Казахстан</option>
+                                <option value="other" data-i18n="tourRegionOptOther">Другой</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset style="flex: 1; min-width: 300px;">
+                            <legend data-i18n="tourLegendContacts">Контактные данные и состав</legend>
+
+                            <label for="captain-email" data-i18n="tourEmailLabel">Email капитана:</label>
+                            <input id="captain-email" name="captainEmail" type="email" placeholder="captain@mail.ru" required />
+
+                            <label for="captain-discord" style="margin-top: 1rem;" data-i18n="tourDiscordLabel">Discord капитана:</label>
+                            <input id="captain-discord" name="captainDiscord" type="text" placeholder="NickName#1234" required />
+                            
+                            <label for="roster" style="margin-top: 1rem;" data-i18n="tourRosterLabel">Steam-профили всех 5 игроков:</label>
+                            <textarea id="roster" name="roster" rows="3" required placeholder="https://steamcommunity.com/id/..." style="width: 100%; padding: 0.65rem; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-elevated); color: var(--text); font-family: inherit;"></textarea>
+                        </fieldset>
+                    </div>
+
+                    <fieldset>
+                        <legend data-i18n="tourLegendPolicy">Политика турнира</legend>
+                        <div style="margin-bottom: 0.5rem;">
+                            <input type="checkbox" id="rules" name="rulesAccepted" required />
+                            <label for="rules" data-i18n="tourRulesLabel">С регламентом турнира ознакомлен, обязуемся установить античит Faceit.</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="age" name="ageAccepted" required />
+                            <label for="age" data-i18n="tourAgeLabel">Всем участникам команды есть полных 16 лет.</label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" style="align-self: flex-start;" data-i18n="tourSubmitBtn">Отправить заявку организаторам</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Григорий Педанов ИСП(11)-24-2</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

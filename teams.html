@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команды и игроки | CyberArena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+    <a href="#main" class="skip-link" data-i18n="skip">Перейти к контенту</a>
+
+    <div class="site-wrap">
+        <header class="site-header">
+            <div class="site-header__top">
+                <h1 class="site-title" data-i18n="siteTitleShort">CyberArena</h1>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+                
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="navHome">Главная</a></li>
+                        <li><a href="news.html" data-i18n="navNews">Новости</a></li>
+                        <li><a href="teams.html" aria-current="page" data-i18n="navTeams">Команды и игроки</a></li>
+                        <li><a href="tournaments.html" data-i18n="navTournaments">Турниры</a></li>
+                        <li><a href="broadcasts.html" data-i18n="navBroadcasts">Трансляции</a></li>
+                        <li><a href="forum.html" data-i18n="navForum">Форум</a></li>
+                        <li><a href="contacts.html" data-i18n="navContacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <section class="lang-bar" aria-label="Переключение языка">
+                    <h2 data-i18n="langTitle">Язык</h2>
+                    <ul>
+                        <li><a href="#" class="js-lang" data-lang="ru" aria-current="page">RU</a></li>
+                        <li><a href="#" class="js-lang" data-lang="en">EN</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+
+        <hr>
+
+        <main id="main" class="site-main">
+            <section style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; background: var(--bg-card); padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--border);">
+                <a href="#cs2" style="font-size: 1.2rem; font-weight: 700;">🔫 Counter-Strike 2</a>
+                <a href="#dota2" style="font-size: 1.2rem; font-weight: 700; color: var(--accent-2);">🧙‍♂️ Dota 2</a>
+            </section>
+
+            <section id="cs2" style="padding-top: 1rem;">
+                <h2 style="color: var(--accent); text-align: center; font-size: 1.8rem; text-transform: uppercase; letter-spacing: 2px;">Counter-Strike 2</h2>
+                
+                <h3 data-i18n="csWorldRank">Мировой рейтинг команд (Топ-5 HLTV)</h3>
+                <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-color: var(--border); text-align: left; border-collapse: collapse; margin-bottom: 2rem;">
+                    <thead>
+                        <tr style="background: var(--bg-card);">
+                            <th data-i18n="rankPlace">Место</th>
+                            <th data-i18n="rankLogo">Логотип</th>
+                            <th data-i18n="rankName">Название команды</th>
+                            <th data-i18n="rankPoints">Очки</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1</strong></td>
+                            <td style="width: 60px; text-align: center;"><img src="cs-spirit.png" width="40" height="40" alt="Team Spirit" style="object-fit: contain;"></td>
+                            <td><strong>Team Spirit</strong></td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td style="text-align: center;"><img src="cs-faze.png" width="40" height="40" alt="FaZe Clan" style="object-fit: contain;"></td>
+                            <td><strong>FaZe Clan</strong></td>
+                            <td>945</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td style="text-align: center;"><img src="cs-navi.png" width="40" height="40" alt="NAVI" style="object-fit: contain;"></td>
+                            <td><strong>Natus Vincere</strong></td>
+                            <td>780</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4</strong></td>
+                            <td style="text-align: center;"><img src="cs-mouz.png" width="40" height="40" alt="MOUZ" style="object-fit: contain;"></td>
+                            <td><strong>MOUZ</strong></td>
+                            <td>610</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5</strong></td>
+                            <td style="text-align: center;"><img src="cs-vitality.png" width="40" height="40" alt="Vitality" style="object-fit: contain;"></td>
+                            <td><strong>Team Vitality</strong></td>
+                            <td>590</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 data-i18n="csStarPlayers">Звездные игроки CS2</h3>
+                <article style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+                    <img src="p-m0nesy.jpg.jpg" alt="m0NESY" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid var(--border);">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="margin-top: 0;">Илья «m0NESY» Осипов</h3>
+                        <p style="margin: 0 0 0.5rem; color: var(--text-muted);"><strong data-i18n="teamLabel">Команда:</strong> G2 Esports | <strong data-i18n="roleLabel">Роль:</strong> <span data-i18n="roleSniper">Снайпер (AWP)</span></p>
+                        <p data-i18n="descMonesy">Рейтинг 2.0: <strong style="color: var(--accent);">1.38</strong>. Один из самых талантливых молодых игроков, мастер клатчей и феноменальной реакции.</p>
+                    </div>
+                </article>
+
+                <article style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+                    <img src="p-donk.jpg" alt="donk" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid var(--border);">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="margin-top: 0;">Данил «donk» Крышковец</h3>
+                        <p style="margin: 0 0 0.5rem; color: var(--text-muted);"><strong data-i18n="teamLabel">Команда:</strong> Team Spirit | <strong data-i18n="roleLabel">Роль:</strong> <span data-i18n="roleRiflerEntry">Рифлер (Энтри)</span></p>
+                        <p data-i18n="descDonk">Рейтинг 2.0: <strong style="color: var(--accent);">1.45</strong>. Главное открытие года, MVP IEM Katowice 2024, ломающий тайминги самых опытных команд.</p>
+                    </div>
+                </article>
+
+                <article style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+                    <img src="p-niko.jpg" alt="NiKo" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid var(--border);">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="margin-top: 0;">Никола «NiKo» Ковач</h3>
+                        <p style="margin: 0 0 0.5rem; color: var(--text-muted);"><strong data-i18n="teamLabel">Команда:</strong> G2 Esports | <strong data-i18n="roleLabel">Роль:</strong> <span data-i18n="roleRifler">Рифлер</span></p>
+                        <p data-i18n="descNiko">Рейтинг 2.0: <strong style="color: var(--accent);">1.19</strong>. Легендарный игрок, обладающий одним из лучших и стабильных аимов в истории игры.</p>
+                    </div>
+                </article>
+                
+                <p style="text-align: right; margin-top: 1rem;"><a href="#top" data-i18n="backToTop">Наверх к выбору дисциплины ↑</a></p>
+            </section>
+
+            <hr>
+
+            <section id="dota2" style="padding-top: 1rem;">
+                <h2 style="color: var(--accent-2); text-align: center; font-size: 1.8rem; text-transform: uppercase; letter-spacing: 2px;">Dota 2</h2>
+                
+                <h3 data-i18n="dotaWorldRank">Мировой рейтинг команд (Топ-5 ESL)</h3>
+                <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-color: var(--border); text-align: left; border-collapse: collapse; margin-bottom: 2rem;">
+                    <thead>
+                        <tr style="background: var(--bg-card);">
+                            <th data-i18n="rankPlace">Место</th>
+                            <th data-i18n="rankLogo">Логотип</th>
+                            <th data-i18n="rankName">Название команды</th>
+                            <th data-i18n="rankPoints">DPC Очки</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1</strong></td>
+                            <td style="width: 60px; text-align: center;"><img src="d2-falcons.png" width="40" height="40" alt="Team Falcons" style="object-fit: contain;"></td>
+                            <td><strong>Team Falcons</strong></td>
+                            <td>4200</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td style="text-align: center;"><img src="d2-betboom.png" width="40" height="40" alt="BetBoom Team" style="object-fit: contain;"></td>
+                            <td><strong>BetBoom Team</strong></td>
+                            <td>3800</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td style="text-align: center;"><img src="cs-spirit.png" width="40" height="40" alt="Team Spirit" style="object-fit: contain;"></td>
+                            <td><strong>Team Spirit</strong></td>
+                            <td>3550</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4</strong></td>
+                            <td style="text-align: center;"><img src="d2-gladiators.png" width="40" height="40" alt="Gaimin Gladiators" style="object-fit: contain;"></td>
+                            <td><strong>Gaimin Gladiators</strong></td>
+                            <td>3100</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5</strong></td>
+                            <td style="text-align: center;"><img src="d2-xtreme.png" width="40" height="40" alt="Xtreme Gaming" style="object-fit: contain;"></td>
+                            <td><strong>Xtreme Gaming</strong></td>
+                            <td>2900</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 data-i18n="dotaStarPlayers">Звездные игроки Dota 2</h3>
+                <article style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; border-left-color: var(--accent-2);">
+                    <img src="p-collapse.jpg" alt="Collapse" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid var(--border);">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="margin-top: 0;">Магомед «Collapse» Халилов</h3>
+                        <p style="margin: 0 0 0.5rem; color: var(--text-muted);"><strong data-i18n="teamLabel">Команда:</strong> Team Spirit | <strong data-i18n="roleLabel">Роль:</strong> <span data-i18n="roleOfflane">Оффлейнер (Поз. 3)</span></p>
+                        <p data-i18n="descCollapse">Двукратный чемпион The International. Признанный гений инициации на Magnus и Mars, способный в одиночку перевернуть драку.</p>
+                    </div>
+                </article>
+
+                <article style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; border-left-color: var(--accent-2);">
+                    <img src="p-yatoro.jpg" alt="Yatoro" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid var(--border);">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="margin-top: 0;">Илья «Yatoro» Мулярчук</h3>
+                        <p style="margin: 0 0 0.5rem; color: var(--text-muted);"><strong data-i18n="teamLabel">Команда:</strong> Team Spirit | <strong data-i18n="roleLabel">Роль:</strong> <span data-i18n="roleCarry">Керри (Поз. 1)</span></p>
+                        <p data-i18n="descYatoro">Двукратный чемпион TI. Считается одним из лучших керри-игроков в истории Dota 2 благодаря огромному пулу героев и идеальному пониманию макроигры.</p>
+                    </div>
+                </article>
+
+                <article style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; border-left-color: var(--accent-2);">
+                    <img src="p-dyrachyo.jpg" alt="dyrachyo" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid var(--border);">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="margin-top: 0;">Антон «dyrachyo» Шкредов</h3>
+                        <p style="margin: 0 0 0.5rem; color: var(--text-muted);"><strong data-i18n="teamLabel">Команда:</strong> Gaimin Gladiators | <strong data-i18n="roleLabel">Роль:</strong> <span data-i18n="roleCarry">Керри (Поз. 1)</span></p>
+                        <p data-i18n="descDyrachyo">Победитель множества мейджоров. Отличается сверхагрессивным стилем игры, который создает огромное пространство для остальной команды.</p>
+                    </div>
+                </article>
+                
+                <p style="text-align: right; margin-top: 1rem;"><a href="#top" data-i18n="backToTop">Наверх к выбору дисциплины ↑</a></p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2 data-i18n="teamsTransferTitle">Трансферный хаб: Поиск команды</h2>
+                <p data-i18n="teamsTransferText">Оставьте свою анкету, если вы ищете стак для турниров или пракков.</p>
+                
+                <form action="#" method="post" style="max-width: 100%;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+                        <div style="flex: 1; min-width: 250px;">
+                            <label for="nickname" data-i18n="teamsNickLabel">Ваш никнейм:</label>
+                            <input type="text" id="nickname" name="nickname" required placeholder="Например: God">
+                            
+                            <label for="game-select" style="margin-top: 1rem;" data-i18n="teamsGameLabel">Выберите дисциплину:</label>
+                            <select id="game-select" name="game">
+                                <option value="cs2">Counter-Strike 2</option>
+                                <option value="dota2">Dota 2</option>
+                            </select>
+                        </div>
+                        <div style="flex: 1; min-width: 250px;">
+                            <label for="hours" data-i18n="teamsHoursLabel">Опыт игры (часов):</label>
+                            <input type="number" id="hours" name="hours" min="0" step="100" placeholder="5000">
+
+                            <label for="tracker-link" style="margin-top: 1rem;" data-i18n="teamsProfileLabel">Ссылка на профиль (Faceit / Dotabuff):</label>
+                            <input type="url" id="tracker-link" name="trackerLink" required placeholder="https://...">
+                        </div>
+                    </div>
+
+                    <button type="submit" style="margin-top: 1rem;" data-i18n="teamsPublishBtn">Опубликовать анкету</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Григорий Педанов ИСП(11)-24-2</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трансляции и Стримы | CyberArena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link" data-i18n="skip">Перейти к контенту</a>
+
+    <div class="site-wrap">
+        <header class="site-header">
+            <div class="site-header__top">
+                <h1 class="site-title" data-i18n="siteTitleShort">CyberArena</h1>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+                
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="navHome">Главная</a></li>
+                        <li><a href="news.html" data-i18n="navNews">Новости</a></li>
+                        <li><a href="teams.html" data-i18n="navTeams">Команды и игроки</a></li>
+                        <li><a href="tournaments.html" data-i18n="navTournaments">Турниры</a></li>
+                        <li><a href="broadcasts.html" aria-current="page" data-i18n="navBroadcasts">Трансляции</a></li>
+                        <li><a href="forum.html" data-i18n="navForum">Форум</a></li>
+                        <li><a href="contacts.html" data-i18n="navContacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <section class="lang-bar" aria-label="Переключение языка">
+                    <h2 data-i18n="langTitle">Язык</h2>
+                    <ul>
+                        <li><a href="#" class="js-lang" data-lang="ru" aria-current="page">RU</a></li>
+                        <li><a href="#" class="js-lang" data-lang="en">EN</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+
+        <hr>
+
+        <main id="main" class="site-main">
+            <section>
+                <h2 data-i18n="broadcastsLiveTitle">Прямой эфир <span style="background: var(--accent-2); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.9rem; vertical-align: middle; margin-left: 0.5rem;">LIVE</span></h2>
+                <article style="padding-top: 1.5rem;">
+                    <p style="margin-top: 0; color: var(--text-muted);"><em data-i18n="broadcastsNowPlaying">Сейчас играет: Team Spirit vs Cloud9 (Карта 2 - Anubis)</em></p>
+                    
+                    <section class="twitch-widget" aria-label="Twitch трансляция">
+                        <div id="twitch-embed" data-channel="eslcs"></div>
+                        <div class="twitch-widget__meta">
+                            <span data-i18n="viewersLabel">Зрителей</span>:
+                            <strong class="js-twitch-viewers" style="color: var(--accent);">—</strong>
+                            <span class="twitch-widget__sep">|</span>
+                            <span data-i18n="langLabel">Язык</span>: 🇷🇺 <span data-i18n="langRussian">Русский</span>
+                        </div>
+                    </section>
+                </article>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2 data-i18n="broadcastsScheduleTitle">Расписание будущих трансляций</h2>
+                <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-color: var(--border); border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="background: var(--bg-card);">
+                            <th data-i18n="broadcastsThDate">Дата и время</th>
+                            <th data-i18n="broadcastsThStudio">Студия освещения</th>
+                            <th data-i18n="broadcastsThEvent">Событие</th>
+                            <th data-i18n="broadcastsThLink">Ссылка</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    <tr>
+        <td data-i18n="brdToday">Сегодня, 21:00</td>
+        <td>Paragon Events</td>
+        <td data-i18n="brdEvent1">Dota 2 - DreamLeague (Группы)</td>
+        <td><a href="#" data-i18n="brdLinkGo">Перейти на канал</a></td>
+    </tr>
+    <tr>
+        <td data-i18n="brdTomorrow">Завтра, 14:00</td>
+        <td>Fissure</td>
+        <td data-i18n="brdEvent2">CS2 - BetBoom Dacha (Полуфиналы)</td>
+        <td><a href="#" data-i18n="brdLinkRemind">Установить напоминание</a></td>
+    </tr>
+</tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Григорий Педанов ИСП(11)-24-2</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
