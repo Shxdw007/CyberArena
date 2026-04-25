@@ -784,7 +784,12 @@
         if (!window.Twitch || !window.Twitch.Player) throw new Error("Twitch.Player not available");
 
         // eslint-disable-next-line no-new
-        new window.Twitch.Player("twitch-embed", { channel: channel, parent: [parent] });
+        new window.Twitch.Player("twitch-embed", { 
+    width: "100%", 
+    height: "100%", 
+    channel: channel, 
+    parent: [parent] 
+});
       })
       .catch(function () {
         notify({ type: "danger", title: "Broadcasts", text: "Не удалось загрузить Twitch embed (проверь интернет)." });
